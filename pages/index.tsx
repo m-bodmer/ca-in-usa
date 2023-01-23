@@ -15,6 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <h1>This is H1</h1>
+        <p>Inch ruler reference</p>
+        <p>Common calculators - Inch to MM - F and C most common ranges</p>
+        <p>Current location forecast in F and C - Should be configurable</p>
+
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;

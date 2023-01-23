@@ -1,0 +1,12 @@
+{ "cities":
+  [
+    {
+      "id": 1,
+      "name": "Santa Cruz"
+    },
+    {
+      "id": 2,
+      "name": "San Francisco"
+    }
+  ]
+}
