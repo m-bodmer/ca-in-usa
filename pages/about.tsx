@@ -1,6 +1,6 @@
 import path from 'path'
 import { promises as fs } from 'fs'
-import styles from '@/styles/Home.module.css'
+import Layout from '@/components/layout'
 
 interface FileData {
   cities: City[]
@@ -14,17 +14,16 @@ interface City {
 export default function About({ cityData }: { cityData: FileData }) {
   return (
     <>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <code>{JSON.stringify(cityData)}</code>
-          <div className='font-bold'>About this site - Supported Cities :</div>
+      <Layout>
+        <div>
+          <div className="font-bold">About this site - Supported Cities :</div>
           <ul>
             {cityData.cities.map((city: City) => (
               <li key={city.id}>{city.name}</li>
             ))}
           </ul>
         </div>
-      </main>
+      </Layout>
     </>
   )
 }
